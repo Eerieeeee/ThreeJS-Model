@@ -46,7 +46,7 @@ const modelLoader = new GLTFLoader()
 renderer.outputEncoding = THREE.sRGBEncoding
 
 modelLoader.load(
-    'Homepage.glb',
+    'Model/Homepage.glb',
 
     function(gltf) {
         scene.add( gltf.scene)
