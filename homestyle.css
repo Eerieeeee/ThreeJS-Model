@@ -89,6 +89,13 @@ nav > .nav-section {
   justify-content: center;
 }
 
+.nav-logo-jpg {
+    border-radius:0px;
+    height: 60px; 
+    width:auto;
+}
+
+
 /* Splits up the Nav Bar and calculates the space of each section */
 #nav-logo-section,
 #nav-link-section {
@@ -158,10 +165,23 @@ contactButton:hover{
     width: 100%;
   }
 
-  .progress-bar-container, .controls-container {
-    width:600px; 
-    height:fit-content; 
-    background-color: rgb(163, 157, 96);
+  .nav-logo-jpg {
+    border-radius:0px;
+    height: 60px; 
+    width:auto;
+}
+
+  #nav-link-section {
+    border-left: 1px solid var(--border-color);
+    gap: 9rem;
+  }
+  
+  #nav-contact-section {
+    gap: 3rem;
+  }
+  
+  #article-nav-section{
+    gap: 3rem;
   }
 
 }

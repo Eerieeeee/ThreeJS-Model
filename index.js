@@ -108,3 +108,10 @@ function animate() {
 }
 
 animate()
+
+//updates and resizes the window if it is changed
+window.addEventListener('resize', function(){
+    camera.aspect = window.innerWidth / this.window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+})
