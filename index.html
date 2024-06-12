@@ -12,8 +12,30 @@
                 }
             }
     </script>
+    <link rel="stylesheet" href="/dist/homestyle.css">
+
         <title>Eerie Art</title>
     </head>
+
+    <nav style="z-index: 1; background-color: black;">
+        <div id="nav-logo-section" class="nav-section" style="z-index: 1; background-color: black;">
+          <img src="/dist/Eerie.jpg" alt="logo" style="border-radius:0px;  height: 60px; width:auto;">
+        </div>
+        
+        <div id="nav-link-section" class="nav-section" style="z-index: 1; background-color: black;">
+            <ul class="nav__links">
+              <li><a href="./index.html" style="color:rgba(238, 217, 30, 0.8);">Home</a></li>
+              <li><a href="public/CV.html">About</a></li>
+              <li><a href="public/Projects.html">Projects</a></li>
+              <li><a href="public/Interests.html">Personal Interests</a></li> 
+            </ul>
+        </div>
+  
+        <div id="nav-contact-section" class="nav-section" style="z-index: 1; background-color: black;">
+            <a class="cta" href="public/Contact.html"><contactButton>Contact</contactButton></a>
+        </div>
+    </nav>
+
     <body>
         <canvas class="webgl"></canvas>
         <script type="module" src="index.js"></script>
