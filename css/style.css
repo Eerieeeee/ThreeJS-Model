@@ -444,6 +444,35 @@ projectButton{
     display: initial;
   }
 
+  .popup{
+    background-color: var(--nav-color);
+    max-width:45%; height:auto;
+    padding: 10px 30px;
+    position: absolute;
+    transform: translate(-49%, 2655%);
+    left: 50%;
+    top: 2620px;
+    border-radius: 12px;
+    display: none;
+    z-index: 1;
+  }
+  
+  .popup button {
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .popup p{
+    text-align: justify;
+    margin: 20px 0px;
+  }
+
   /* NAV BAR SCRIPTS */
   nav {
     position: fixed;
@@ -866,35 +895,7 @@ projectButton{
   #myPlaylist {
     width:100%;
   }
-  
-  .popup{
-    background-color: var(--nav-color);
-    max-width:45%; height:auto;
-    padding: 10px 30px;
-    position: absolute;
-    transform: translate(-49%, 2655%);
-    left: 50%;
-    top: 2620px;
-    border-radius: 12px;
-    display: none;
-    z-index: 1;
-  }
-  
-  .popup button {
-    display: block;
-    margin: 0 0 20px auto;
-    background-color: transparent;
-    font-size: 30px;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-  
-  .popup p{
-    text-align: justify;
-    margin: 20px 0px;
-  }
+
 
   /* ABOUT PAGE SCRIPTS */
 body::-webkit-scrollbar{
