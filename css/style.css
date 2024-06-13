@@ -404,7 +404,7 @@ projectButton{
 }
 
 /* Tablet Size */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .row{
     width:100%;
   }
@@ -462,7 +462,6 @@ projectButton{
     color: rgb(238, 217, 30);
   }
  
-
   .floating.buttons {
     position: fixed;
     padding-top: 9%;
