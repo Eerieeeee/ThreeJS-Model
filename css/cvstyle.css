@@ -516,6 +516,12 @@ projectButton{
       grid-template-columns: 33% 33% 33%;
       align-content: center;
   }
+
+  .about-container {
+    padding-top: 50px; 
+    padding-left: 5em; 
+    padding-bottom: 150px;
+  }
   
   section{
     display:inline-flex;
