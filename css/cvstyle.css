@@ -1,0 +1,599 @@
+/* I found a font on Google Fonts, this is a source that finds the font type so i can use it */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+/* Not quite sure, but i think this is like creating variables that i can call later in the script */
+:root {
+  --nav-color: rgb(36, 37, 42);
+  --background-color: rgb(0, 0, 0);
+  --border-color: rgb(255,255,255,0.5);
+  --highlight-color: rgba(238, 217, 30, 0.8);
+  --button-color: rgb(199, 180, 9, 0.8);
+  --logo-light-color: rgb(238, 228, 140);
+}
+
+ /* ABOUT PAGE SCRIPTS */
+ body::-webkit-scrollbar{
+    display: none;
+  }
+
+/* NAV BAR SCRIPTS */
+nav {
+    width: auto;
+    display: flex;
+    /* border bottom doesnt actually work */
+    border-bottom: 1px solid(--highlight-color);
+    background-color: var(--background-color);
+  }
+  
+  /* Nav Bar Division Attributes Top of Screen*/
+  nav > .nav-section {
+    padding: 2rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-logo-jpg {
+      border-radius:0px;
+      height: 60px; 
+      width:auto;
+  }
+  
+  
+  /* Splits up the Nav Bar and calculates the space of each section */
+  #nav-logo-section,
+  #nav-link-section {
+    flex-basis: calc(100%/3);
+  }
+  #nav-contact-section {
+    border-left: 1px solid var(--border-color);
+    flex-grow: 1;
+  }
+  
+  #nav-logo-section {
+    justify-content: flex-start;
+  }
+  
+  #nav-link-section {
+    border-left: 1px solid var(--border-color);
+    gap: 6rem;
+  }
+  
+  #nav-contact-section {
+    gap: 3rem;
+  }
+  
+  #article-nav-section{
+    gap: 3rem;
+  }
+  
+  /* Customise logo settings */
+  .logo{
+    cursor: pointer;
+    transform: scale(4); 
+  }
+  
+  /* rearranges the nav links to side by side */
+  .nav__links{
+    list-style: none;
+  }
+  
+  .nav__links li{
+    display: inline-block;
+    padding: 0px 30px;
+  }
+  
+  .nav__links li a{
+    transition: all 0.3s ease 0s;
+  }
+  .nav__links li a:hover{
+    color: var(--highlight-color);
+  }
+  
+  /* creates the contact button */
+  contactButton{
+    padding: 9px 25px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  /* changes the contact button colour when hovered over */
+  contactButton:hover{
+     background-color: var(--highlight-color);
+  }
+
+ /*Cannot remember what the * is but i'm sure i'll find out one day */
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* TEXT FORMATTING SCRIPTS ||||||| for grey change background colour to nav colour */
+body {
+  background-color: var(--background-color);
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+}
+
+main {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  
+  /* Program Logos */
+  .icon-img {
+    width: 50%;
+    height: 100px;
+    object-fit: scale-down;
+    border-radius: 0px;
+  }
+  
+  .icon-row{
+    justify-content: center;
+    text-align: center;
+    padding:1em 25%;
+    padding-bottom: 1em;
+    display:grid;
+    grid-gap: 8em;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    width:100%;
+  }
+  
+  figure{
+    padding-top: 24%;
+    height:fit-content;
+  }
+  
+  figcaption{
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    color:white;
+    padding-left: 20%;
+  }
+  
+
+.wrapper{
+  width: 100%;
+}
+
+li, a, contactButton {
+  font-size:16px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #edf0f1;
+  text-decoration: none;
+  transition: opacity 400ms ease;
+}
+
+projectButton{
+  margin-left: 60%;
+  margin-bottom: 10px;
+  display: block;
+  padding: 9px 1px;
+  width: 125px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+}
+projectButton:hover{
+  background-color: var(--button-color);
+  color: black;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 331px;
+  max-height: 155px;
+  border-radius: 15px;
+}
+
+.about{
+  max-width: 400px;
+  max-height: 1300px;
+  border-radius: 15px;
+}
+
+.column.left.about {
+  /* width:100%; */
+  text-align: left;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  padding-left: 2%;
+}
+
+.column.middle.about {
+  /* width:100%; */
+  text-align: left;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  padding-left: 2%;
+}
+
+.column.right.about {
+  /* width:100%; */
+  text-align: left;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  padding-left: 2%;
+}
+
+.about-container {
+  display: flex;
+}
+ 
+
+/* This allows me to customise each element listed below, e.g h1, h2, etc */
+h1, h2, h3, p, span{
+    font-family: "Roboto Condensed", sans-serif;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+
+h4{
+    color: rgb(238, 217, 30);
+    font-style:italic;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+h5{
+  color: rgb(238, 217, 30);
+  font-style: italic;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p{
+  font-size: 14px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+
+.tab {
+  display: inline-block;
+  margin-left: 10em;
+}
+
+.tab-short {
+  display: inline-block;
+  margin-left: 6em;
+}
+
+
+projectButton{
+  margin-left: 60%;
+  margin-bottom: 10px;
+  display: block;
+  padding: 9px 1px;
+  width: 125px;
+}
+
+.row{
+  width:100%;
+}
+
+.column {
+  padding-top: 25%;
+  float: left;
+}
+
+.icon-row{
+  width:100%;
+  text-align: center;
+  padding:1em 5%;
+  display:grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, minmax(60px, 1fr));
+}
+
+/* Program Logos */
+.icon-img {
+  width: 75%;
+  height: 100px;
+  object-fit: scale-down;
+}
+
+.gallery-container {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 50px, 8%; */
+}
+
+.gallery {
+  width:100%;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 30px;
+}
+
+.gallery img{
+  width: 100%;
+}
+
+/* Tablet Size */
+@media screen and (max-width: 400px) {
+
+    body {
+        height: 160vh;
+        width: fit-content;
+    }
+
+    main {
+        flex-grow: 1;
+        position: relative;
+        overflow:hidden;
+    }
+
+    .intro.para {
+        padding-top: 25px; 
+        padding-left: 4em;
+        padding-bottom: 1em;
+    }
+
+    .about{
+        margin-top: 1%;
+    }
+
+    .column {
+        padding-top: 9%;
+      }
+      
+      .column.left {
+        padding-right: 0%;
+        width: 0%;
+        display:initial;
+        align-items: center;
+      }
+      
+      .column.middle {
+        align-items: left;
+        padding-top: 9%;
+        width:0%;
+        padding-bottom: 50px;
+      }
+      
+      .column.right {
+        display: none;
+      }
+
+      .column.middle.about {
+        /* width:100%; */
+        text-align: left;
+        padding-top: 45px;
+        padding-bottom: 50px;
+        padding-left: 0%;
+      }
+
+    .mobile.right {
+        padding-top: 29rem;
+        width: 90%;
+        text-align: center;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+    
+
+  .row{
+    width:100%;
+  }
+ 
+  img{
+    width: auto;
+    height: auto;
+    max-width: 480px;
+    max-height: 280px;
+  }
+
+  h1{
+    font-size: 32px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  p{
+    font-size: 18px;
+  }
+
+  h3{
+    font-size: 36px;
+    color: rgb(238, 217, 30);
+  }
+  
+  h4{
+    font-size: 48px;
+  }
+
+  h5{
+    font-size: 20px;
+    color: rgb(238, 217, 30);
+  }
+ }
+
+/* Desktop Size */
+@media screen and (min-width: 1000px) {
+
+    .mobile.right {
+        display: none;
+    }
+
+    .intro.para {
+        padding-top: 100px; 
+        padding-left: 7em; 
+        padding-bottom: 0;
+    }
+    
+    .about{
+        margin-top: 1.6%;
+    }
+
+  img{
+    width: auto;
+    height: auto;
+    max-width: 640px;
+    max-height: 360px;
+  }
+  
+  h1{
+    font-size: 26px;
+  }
+
+  h2, h3, p, span{
+    font-size: 24px;  
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 36px;
+    
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+  
+  li, a, contactButton {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #edf0f1;
+    transition: opacity 400ms ease;
+  }
+  
+  li.bullet.list{
+    text-align: left;
+    list-style-position: inside;
+    list-style-type: square;
+    font-size: 22px;
+  }
+  
+  h3.skill.title {
+    text-align: left;
+  }
+    
+  /* Customise header */
+  section{
+    /* display: inline-block; */
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding:10px 10%;
+  }
+  
+  header{
+    /* display:block; */
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding:10px 10%;
+  
+  }
+ 
+  /*container and contents*/
+  .image-container{
+      padding-top: 40px;
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      align-content: center;
+  }
+  
+  section{
+    display:inline-flex;
+    flex-wrap: wrap;
+    gap:1em;
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  section div{
+    flex:1 1 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:2em;
+  }
+
+  section div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .item1 {
+    height:100hv;
+    width: 300px;
+    object-fit: cover;
+  }
+
+  .floating.buttons {
+    position: fixed;
+    padding-top: 9%;
+    padding-left: 12%;
+  }
+
+  .column {
+    padding-top: 9%;
+  }
+  
+  .column.left {
+    padding-left: 100px;
+    padding-right: 0%;
+    display:initial;
+    width: 35%;
+    align-items: center;
+  }
+  
+  .column.middle {
+    padding-top: 9%;
+    width:50%;
+    padding-bottom: 50px;
+  }
+  
+  .column.right {
+    width: 30%;
+    display: initial;
+    padding-left: 3%;
+  }
+
+projectButton{
+  margin-left: 0%;
+  margin-bottom: 10px;
+  display: block;
+  padding: 9px 1px;
+  width: 125px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+}
+projectButton:hover{
+  background-color: white;
+  color: black;
+}
+
+}
