@@ -38,14 +38,13 @@ a{
 a:hover{
     color: var(--highlight-color);
 }
-
-/* Nav Bar Attributes */
+/* NAV BAR SCRIPTS */
 nav {
-    background-color: black;
-    width: 100%;
-    height: 10%;
+    width: auto;
     display: flex;
-    margin:auto;
+    /* border bottom doesnt actually work */
+    border-bottom: 1px solid(--highlight-color);
+    background-color: var(--background-color);
   }
   
   /* Nav Bar Division Attributes Top of Screen*/
@@ -57,6 +56,13 @@ nav {
     align-items: center;
     justify-content: center;
   }
+  
+  .nav-logo-jpg {
+      border-radius:0px;
+      height: 60px; 
+      width:auto;
+  }
+  
   
   /* Splits up the Nav Bar and calculates the space of each section */
   #nav-logo-section,
@@ -72,39 +78,55 @@ nav {
     justify-content: flex-start;
   }
   
-  /* #nav-logo-section{width: 1%} */
-  
   #nav-link-section {
     border-left: 1px solid var(--border-color);
-    gap: 0rem;
+    gap: 6rem;
   }
   
   #nav-contact-section {
-    gap: 2rem;
+    gap: 3rem;
   }
   
   #article-nav-section{
-    gap: 2rem;
+    gap: 3rem;
   }
-
-
-/* rearranges the nav links to side by side */
-.nav__links{
-    columns: 2;
+  
+  /* Customise logo settings */
+  .logo{
+    cursor: pointer;
+    transform: scale(4); 
+  }
+  
+  /* rearranges the nav links to side by side */
+  .nav__links{
     list-style: none;
   }
   
   .nav__links li{
     display: inline-block;
-    padding: 0px 0px;
+    padding: 0px 30px;
   }
   
-.nav__links li a{
+  .nav__links li a{
     transition: all 0.3s ease 0s;
-}
-.nav__links li a:hover{
+  }
+  .nav__links li a:hover{
     color: var(--highlight-color);
-}
+  }
+  
+  /* creates the contact button */
+  contactButton{
+    padding: 9px 25px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  /* changes the contact button colour when hovered over */
+  contactButton:hover{
+     background-color: var(--highlight-color);
+  }
   
 /* creates the contact button */
 contactButton{
@@ -327,71 +349,6 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 
 
 @media screen and (max-width: 400px) {
-
-    /* creates the contact button */
-    contactButton{
-        padding: 9px 25px;
-        background-color: var(--button-color);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-    }
-    /* changes the contact button colour when hovered over */
-    contactButton:hover{
-        background-color: var(--highlight-color);
-    }  
-
-    nav{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display: flex;
-        background-color: var(--background-color);
-        z-index: 3;
-    }
-
-    /* Nav Bar Division Attributes Top of Screen*/
-    nav > .nav-section {
-        padding: 1rem 1rem;
-        display: flex;
-        gap: 1rem;
-        border-bottom: 1px solid var(--border-color);
-        align-items: left;
-        justify-content: left;
-    }
-  
-    /* Splits up the Nav Bar and calculates the space of each section */
-    #nav-logo-section,
-    #nav-link-section {
-        flex-basis: calc(100%/3);
-    }
-    #nav-contact-section {
-        border-left: 1px solid var(--border-color);
-        flex-grow: 1;
-        justify-content: center;
-    }
-
-    #nav-link-section {
-        border-left: 1px solid var(--border-color);
-        gap: 6rem;
-    }
-  
-    #nav-contact-section {
-        justify-content: center;
-        gap: 3rem;
-  }
-
-   /* rearranges the nav links to side by side */
-   .nav__links{
-    list-style: none;
-  }
-  
-  .nav__links li{
-    display: inline-block;
-    padding: 0px 10px;
-  }
-
   main > article {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 0.3fr;
@@ -441,57 +398,6 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 }
 
 @media screen and (min-width: 1000px) {
-
-    nav{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display: flex;
-        background-color: var(--background-color);
-        z-index: 3;
-    }
-
-    /* Nav Bar Division Attributes Top of Screen*/
-    nav > .nav-section {
-        padding: 2rem 2rem;
-        display: flex;
-        gap: 1rem;
-        border-bottom: 1px solid var(--border-color);
-        align-items: center;
-        justify-content: center;
-    }
-  
-    /* Splits up the Nav Bar and calculates the space of each section */
-    #nav-logo-section,
-    #nav-link-section {
-        flex-basis: calc(100%/3);
-    }
-    #nav-contact-section {
-        border-left: 1px solid var(--border-color);
-        flex-grow: 1;
-        justify-content: center;
-    }
-
-    #nav-link-section {
-        border-left: 1px solid var(--border-color);
-        gap: 6rem;
-    }
-  
-    #nav-contact-section {
-        justify-content: center;
-        gap: 3rem;
-  }
-
-   /* rearranges the nav links to side by side */
-   .nav__links{
-    columns: 1;
-    list-style: none;
-  }
-  
-  .nav__links li{
-    display: inline;
-    padding: 0px 30px;
-  }
 
   main > article {
     grid-template-columns: 2fr 1fr;
