@@ -205,29 +205,7 @@ img {
   border-radius: 15px;
 }
 
-.column.left.about {
-  /* width:100%; */
-  text-align: left;
-  padding-top: 45px;
-  padding-bottom: 50px;
-  padding-left: 2%;
-}
 
-.column.middle.about {
-  /* width:100%; */
-  text-align: left;
-  padding-top: 45px;
-  padding-bottom: 50px;
-  padding-left: 2%;
-}
-
-.column.right.about {
-  /* width:100%; */
-  text-align: left;
-  padding-top: 45px;
-  padding-bottom: 50px;
-  padding-left: 2%;
-}
 
 .about-container {
   display: flex;
@@ -262,6 +240,12 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+li.bullet.list{
+    text-align: left;
+    list-style-position: inside;
+    list-style-type: square;
+  }
+  
 
 .tab {
   display: inline-block;
@@ -376,12 +360,34 @@ projectButton{
         display: none;
       }
 
-      .column.middle.about {
-        /* width:100%; */
+
+      .column.left.about {
+        width:29%;
         text-align: left;
-        padding-top: 45px;
-        padding-bottom: 50px;
-        padding-left: 0%;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 2%;
+      }
+      
+      .column.middle.about {
+        width:19%;
+        text-align: left;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 2%;
+      }
+      
+      .column.right.about {
+        width:52%;
+        text-align: left;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 2%;
+        display:inline-block;
+      }
+
+      li.bullet.list{
+        font-size: 12px;
       }
 
     .mobile.right {
@@ -478,13 +484,7 @@ projectButton{
     font-family: "Roboto Condensed", sans-serif;
     color: #edf0f1;
     transition: opacity 400ms ease;
-  }
-  
-  li.bullet.list{
-    text-align: left;
-    list-style-position: inside;
-    list-style-type: square;
-    font-size: 22px;
+    width:160%;
   }
   
   h3.skill.title {
@@ -574,6 +574,40 @@ projectButton{
     width: 30%;
     display: initial;
     padding-left: 3%;
+  }
+
+  .column.left.about {
+    /* width:100%; */
+    text-align: left;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    padding-left: 2%;
+    width: 20%;  
+    margin-left: 10%;
+  }
+  
+  .column.middle.about {
+    /* width:100%; */
+    text-align: left;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    padding-left: 2%;
+    width: 20%; 
+    margin-left: 10%; 
+  }
+  
+  .column.right.about {
+    width:100%;
+    text-align: left;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    padding-left: 2%;
+    padding-right: 0%; 
+    margin-right: 0px;
+  }
+
+  li.bullet.list{
+    font-size: 22px;
   }
 
 projectButton{
