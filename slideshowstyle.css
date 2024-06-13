@@ -13,7 +13,8 @@ body {
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 160vh;
+    width: fit-content;
     margin: 0px;
     overflow: hidden;
 }
@@ -177,7 +178,7 @@ main > article {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 3fr 1fr;
     position: absolute;
     left: 0px;
@@ -235,7 +236,7 @@ main > article:nth-child(2) > .article-image-section {
     background-image: url("Images/Lab/LabRender_004.jpg");
 }
 
-main > article:nth-child(2) > .article-image-section {
+main > article:nth-child(3) > .article-image-section {
     background-image: url("Images/NeonCity/Still_015.jpg");
 }
 
@@ -304,20 +305,22 @@ main > article > .article-title-section *{
 }
 
 main > article > .article-title-section > h2 {
-    flex-basis: 50%;
+    flex-basis: 70%;
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     margin: 0px;
+    margin-top: -30px;
     text-transform: uppercase;
 }
 
 main > article > .article-title-section > a {
-    font-size: 24px;
+    font-size: 48px;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     color: white;
     margin: 0px;
+    margin-top: -40px;
 }
 
 main > article > .article-title-section > a:hover {
@@ -336,7 +339,18 @@ main > article > .article-nav-section > .article-nav-button {
     outline: none;
     color: rgba(255, 255, 255, 0.75);
     font-size: 1.5rem;
+    
     cursor: pointer;
+}
+
+main > article > .article-nav-section > .article-nav-button > h2 {
+    flex-basis: 50%;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0px;
+    margin-top: -30px;
+    text-transform: uppercase;
 }
 
 main > article > .article-nav-section > .article-nav-button:hover {
@@ -345,56 +359,6 @@ main > article > .article-nav-section > .article-nav-button:hover {
 
 main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     border-left: 1px solid var(--border-color);
-}
-
-
-@media screen and (max-width: 400px) {
-  main > article {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 0.3fr;
-}
-
-  main > article > .article-image-section {
-    background-position: center;
-    background-size: cover;
-}
-
-  /* Article Text */
-    main > article > .article-description-section {
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 2rem;
-    }
-
-    main > article > .article-description-section > p {
-    font-size: 1rem;
-    }
-
-    main > article > .article-title-section > h2 {
-        font-size: 1rem;
-        line-height: 1rem;
-    }
-
-    main > article > .article-title-section > a {
-        font-size: 32px;
-    }
-
-    main > article > .article-title-section {
-        align-items: baseline;
-        justify-content: space-between;
-        padding: 2rem 2rem;
-    }
-
-    main > article > .article-nav-section > .article-nav-button {
-        align-items: baseline;
-        font-size: 1rem;
-        flex-grow: 1;
-
-    }
-    .logo{
-        margin-left: 20px;
-        transform: scale(2); 
-    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -454,85 +418,6 @@ a{
 a:hover{
     color: var(--highlight-color);
 }
-
-/* Nav Bar Attributes */
-nav {
-    width: 100%;
-    height: 9%;
-    display: flex;
-    margin:auto;
-  }
-  
-  /* Nav Bar Division Attributes Top of Screen*/
-  nav > .nav-section {
-    padding: 2rem 2rem;
-    display: flex;
-    gap: 1rem;
-    border-bottom: 1px solid var(--border-color);
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Splits up the Nav Bar and calculates the space of each section */
-  #nav-logo-section,
-  #nav-link-section {
-    flex-basis: calc(100%/3);
-  }
-  #nav-contact-section {
-    border-left: 1px solid var(--border-color);
-    flex-grow: 1;
-  }
-  
-  #nav-logo-section {
-    justify-content: flex-start;
-  }
-  
-  /* #nav-logo-section{width: 1%} */
-  
-  #nav-link-section {
-    border-left: 1px solid var(--border-color);
-    gap: 6rem;
-  }
-  
-  #nav-contact-section {
-    gap: 3rem;
-  }
-  
-  #article-nav-section{
-    gap: 3rem;
-  }
-
-
-/* rearranges the nav links to side by side */
-.nav__links{
-    list-style: none;
-}
-  
-.nav__links li{
-    display: inline;
-    padding: 0px 30px;
-}
-  
-.nav__links li a{
-    transition: all 0.3s ease 0s;
-}
-.nav__links li a:hover{
-    color: var(--highlight-color);
-}
-  
-/* creates the contact button */
-contactButton{
-    padding: 9px 25px;
-    background-color: var(--button-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-  /* changes the contact button colour when hovered over */
-contactButton:hover{
-    background-color: var(--highlight-color);
-}  
 
 li {
     font-family: "Roboto Condensed", sans-serif;
