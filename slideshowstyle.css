@@ -127,20 +127,6 @@ nav {
   contactButton:hover{
      background-color: var(--highlight-color);
   }
-  
-/* creates the contact button */
-contactButton{
-    padding: 7.5px;
-    background-color: var(--button-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-  /* changes the contact button colour when hovered over */
-contactButton:hover{
-    background-color: var(--highlight-color);
-}  
 
 li {
     font-family: "Roboto Condensed", sans-serif;

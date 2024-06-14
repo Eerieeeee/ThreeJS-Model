@@ -315,7 +315,7 @@ projectButton{
 }
 
 /* Tablet Size */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 
     body {
         height: 160vh;
@@ -433,6 +433,26 @@ projectButton{
     font-size: 20px;
     color: rgb(238, 217, 30);
   }
+
+  .column.side, .column.middle {
+    width: 100%;
+  }
+
+  .nav-logo-jpg {
+    border-radius:0px;
+    height: 60px; 
+    width:auto;
+}
+
+  #nav-link-section {
+    border-left: 1px solid var(--border-color);
+    gap: 9rem;
+  }
+  
+  #nav-contact-section {
+    gap: 3rem;
+  }
+
  }
 
 /* Desktop Size */

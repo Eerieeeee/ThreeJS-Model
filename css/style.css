@@ -142,6 +142,26 @@ projectButton:hover{
   color: black;
 }
 
+topicButton{
+  margin-left: 20%;
+  margin-bottom: 10px;
+  display: block;
+  padding: 9px 1px;
+  width: 125px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+}
+topicButton:hover{
+  background-color:white;
+  color: black;
+}
+
 #download-link{
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
@@ -234,8 +254,14 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+h3{
+  color: rgb(238, 217, 30);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+
  /* This allows me to customise each element listed below, e.g h1, h2, etc */
- h1, h2, h3, h4, h5, p, span{
+ h1, h2, h4, h5, p, span{
   font-family: "Roboto Condensed", sans-serif;
   color: #edf0f1;
   text-decoration: none;
@@ -420,8 +446,14 @@ projectButton{
   width: 100%;
 }
 
-/* Tablet Size */
+/* Phone Size */
 @media screen and (max-width: 600px) {
+  
+  body {
+    height: 160vh;
+    width: fit-content;
+  }
+
   .row{
     width:100%;
   }
@@ -504,25 +536,6 @@ projectButton{
 
   .column.side, .column.middle {
     width: 100%;
-  }
-
-  .nav-logo-jpg {
-    border-radius:0px;
-    height: 60px; 
-    width:auto;
-}
-
-  #nav-link-section {
-    border-left: 1px solid var(--border-color);
-    gap: 9rem;
-  }
-  
-  #nav-contact-section {
-    gap: 3rem;
-  }
-  
-  #article-nav-section{
-    gap: 3rem;
   }
   
   .column.left{
@@ -651,6 +664,10 @@ projectButton{
     font-weight: bold;
   }
   
+  h3 {
+    color: rgb(238, 217, 30);
+  }
+
   h4 {
     font-style:italic;
     font-size: 18px;
@@ -692,79 +709,6 @@ projectButton{
   
   }
   
-  /* Nav Bar Division Attributes Top of Screen*/
-  nav > .nav-section {
-    padding: 1rem 2rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Splits up the Nav Bar and calculates the space of each section */
-  #nav-logo-section,
-  #nav-link-section {
-    flex-basis: calc(100%/3);
-  }
-  #nav-contact-section {
-    flex-grow: 1;
-    justify-content: center;
-    gap: 3rem;
-  }
-  
-  #nav-logo-section {
-    justify-content: flex-start;
-  }
-  
-  #article-nav-section{
-    gap: 3rem;
-  }
-  
-  /* Customise logo settings */
-  .logo{
-    height: 80px;
-    cursor: pointer;
-    transform: scale(4); 
-  }
-  
-  #nav-link-section {
-    border-left: 1px solid var(--border-color);
-    gap: 6rem;
-  }
-  
-  /* rearranges the nav links to side by side */
-.nav__links{
-  columns: 1;
-  list-style: none;
-}
-
-.nav__links li{
-  display: inline;
-  padding: 0px 30px;
-}
-
-.nav__links li a{
-  font-size: 16px;
-  transition: all 0.3s ease 0s;
-}
-.nav__links li a:hover{
-  color: var(--highlight-color);
-}
-  
-  /* creates the contact button */
-  contactButton{
-    padding: 9px 25px;
-    background-color: var(--button-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-  /* changes the contact button colour when hovered over */
-  contactButton:hover{
-     background-color: var(--highlight-color);
-  }
-    
   /*container and contents*/
   .image-container{
       padding-top: 40px;
@@ -930,20 +874,4 @@ projectButton:hover{
   padding: 20px;
   border: 2px;
 }
-}
-
-@media screen and (min-width: 1460px){
-  .column.left{
-    padding-left: 200px;
-  }
-
-  h3{
-    font-size: 32px;
-    color: rgb(238, 217, 30);
-  }
-
-  h4{
-    font-size: 26px;
-    color: rgb(238, 217, 30);
-  }
 }
