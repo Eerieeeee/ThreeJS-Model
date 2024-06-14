@@ -18,93 +18,93 @@
 
 /* NAV BAR SCRIPTS */
 nav {
-    width: auto;
-    display: flex;
-    /* border bottom doesnt actually work */
-    border-bottom: 1px solid(--highlight-color);
-    background-color: var(--background-color);
-  }
-  
-  /* Nav Bar Division Attributes Top of Screen*/
-  nav > .nav-section {
-    padding: 2rem 2rem;
-    display: flex;
-    gap: 1rem;
-    border-bottom: 1px solid var(--border-color);
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .nav-logo-jpg {
-      border-radius:0px;
-      height: 60px; 
-      width:auto;
-  }
-  
- 
-  /* Splits up the Nav Bar and calculates the space of each section */
-  #nav-logo-section,
-  #nav-link-section {
-    flex-basis: calc(100%/3);
-  }
-  #nav-contact-section {
-    border-left: 1px solid var(--border-color);
-    flex-grow: 1;
-  }
-  
-  #nav-logo-section {
-    justify-content: flex-start;
-  }
-  
-  #nav-link-section {
-    border-left: 1px solid var(--border-color);
-    gap: 6rem;
-  }
-  
-  #nav-contact-section {
-    gap: 3rem;
-  }
-  
-  #article-nav-section{
-    gap: 3rem;
-  }
-  
-  /* Customise logo settings */
-  .logo{
-    cursor: pointer;
-    transform: scale(4); 
-  }
-  
-  /* rearranges the nav links to side by side */
-  .nav__links{
-    list-style: none;
-  }
-  
-  .nav__links li{
-    display: inline-block;
-    padding: 0px 30px;
-  }
-  
-  .nav__links li a{
-    transition: all 0.3s ease 0s;
-  }
-  .nav__links li a:hover{
-    color: var(--highlight-color);
-  }
-  
-  /* creates the contact button */
-  contactButton{
-    padding: 9px 25px;
-    background-color: var(--button-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-  /* changes the contact button colour when hovered over */
-  contactButton:hover{
-     background-color: var(--highlight-color);
-  }
+  width:auto;
+  display: flex;
+  border-bottom: 1px solid(--highlight-color);
+  background-color: var(--background-color);
+  z-index: 2; 
+}
+
+/* Nav Bar Division Attributes Top of Screen*/
+nav > .nav-section {
+  padding: 2rem 2rem;
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo-jpg {
+    border-radius:0px;
+    height: 60px; 
+    width:auto;
+}
+
+
+/* Splits up the Nav Bar and calculates the space of each section */
+#nav-logo-section,
+#nav-link-section {
+  flex-basis: calc(100%/3);
+}
+#nav-contact-section {
+  border-left: 1px solid var(--border-color);
+  flex-grow: 1;
+}
+
+#nav-logo-section {
+  justify-content: flex-start;
+}
+
+#nav-link-section {
+  border-left: 1px solid var(--border-color);
+  gap: 6rem;
+}
+
+#nav-contact-section {
+  gap: 3rem;
+}
+
+#article-nav-section{
+  gap: 3rem;
+}
+
+/* Customise logo settings */
+.logo{
+  cursor: pointer;
+  transform: scale(4); 
+}
+
+/* rearranges the nav links to side by side */
+.nav__links{
+  list-style: none;
+}
+
+.nav__links li{
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+.nav__links li a{
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+  color: var(--highlight-color);
+}
+
+/* creates the contact button */
+contactButton{
+  padding: 9px 25px;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+/* changes the contact button colour when hovered over */
+contactButton:hover{
+   background-color: var(--highlight-color);
+}
 
  /*Cannot remember what the * is but i'm sure i'll find out one day */
   *{
@@ -501,9 +501,14 @@ projectButton{
   }
   
   a, contactButton {
-    font-family: "Roboto Condensed", sans-serif;
-    color: #edf0f1;
-    transition: opacity 400ms ease;
+    font-size:16px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #edf0f1;
+  text-decoration: none;
+  transition: opacity 400ms ease;
+  }
+
+  a {
     width:160%;
   }
   
@@ -668,5 +673,9 @@ li {
     text-align: center;
 }
 
+nav {
+  width:100%;
+  position:fixed;
+}
 
 }
