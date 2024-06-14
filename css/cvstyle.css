@@ -500,7 +500,7 @@ projectButton{
     font-size: 24px;
   }
   
-  li, a, contactButton {
+  a, contactButton {
     font-family: "Roboto Condensed", sans-serif;
     color: #edf0f1;
     transition: opacity 400ms ease;

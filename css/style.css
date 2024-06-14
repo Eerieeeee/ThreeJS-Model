@@ -279,11 +279,11 @@ h3{
 
 /* NAV BAR SCRIPTS */
 nav {
-  width: auto;
+  width:auto;
   display: flex;
-  /* border bottom doesnt actually work */
   border-bottom: 1px solid(--highlight-color);
   background-color: var(--background-color);
+  z-index: 2; 
 }
 
 /* Nav Bar Division Attributes Top of Screen*/
@@ -605,6 +605,8 @@ projectButton{
   .gallery img{
     width: 100%;
   }
+
+
 }
 
 /* Desktop Size */
@@ -873,5 +875,10 @@ projectButton:hover{
   float: left;
   padding: 20px;
   border: 2px;
+}
+
+nav {
+  width:100%;
+  position:fixed;
 }
 }
