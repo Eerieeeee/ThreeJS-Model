@@ -248,8 +248,8 @@ contactButton:hover{
     top: 0%;
   }
 
-  .progress-bar {
-    color: rgb(163, 157, 96);
+  progress ::-webkit-progress-value {
+    background-color: rgb(163, 157, 96);
   }
 }
 
