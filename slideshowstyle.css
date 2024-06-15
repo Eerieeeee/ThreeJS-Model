@@ -294,6 +294,10 @@ main > article:nth-child(10) > .article-image-section {
     background-image: url("Images/ThreeJS/Homepage_001.jpg");
 }
 
+main > article:nth-child(11) > .article-image-section {
+    background-image: url("Images/PortfolioCourse/PC-001.png");
+}
+
 main > article > .article-image-section {
     background-position: center;
     background-size: cover;
