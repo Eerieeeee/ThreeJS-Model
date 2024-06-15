@@ -38,8 +38,8 @@
     </nav>
 
     <!-- POP UP WARNING -->
-    <div class="popup" style="width:300px; height:300px; background-color: grey; margin-top: 10%; margin-left: 41%; border-radius: 10px;">
-        <button id="close">&times;</button>
+    <div class="popup">
+        <button class="popup button" id="close">&times;</button>
             <h1>WEBSITE UNDER DEVELOPMENT</h1>
                 <p>
                     Please be aware that I am currently still working on developing this website for mobile. Most of the pages will <strong>NOT</strong>
@@ -48,6 +48,25 @@
                 </p>
     </div>      
     
+    <div class="progress-bar-container">
+        <p style="font-size: 2rem;" for="progress-bar">Loading...</p>
+            <progress id="progress-bar" value="0" max="100"></progress><br>
+    </div>
+    
+    <div class="controls-container">
+      <h1 style="font-size: 3rem;">Orbital Controls</h1><br>
+    
+      <p style="font-size: 2rem;">
+        <strong>Left Mouse:</strong> Rotate Camera <br>
+        <strong>Right Mouse:</strong> Pan Camera <br>
+        <strong>Middle Mouse:</strong> Zoom Camera (Smooth)<br>
+        <strong>Scroll Wheel:</strong> Zoom Camera (Snap) <br>
+        <strong>R:</strong> Refresh Page <br>
+        <br>
+        <i>Please Wait One Moment...</i></p>    
+    </div>
+
+
     <!-- <audio autoplay loop>
         <source src="Sound/Wind.mp3" type="audio/mp3">
     </audio> -->

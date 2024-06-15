@@ -40,9 +40,36 @@ controls.maxPolarAngle = 1.75
 // const mesh = new THREE.Mesh(geometry, material)
 // scene.add(mesh)
 
+//LOADING SCREEN MANAGER
+const loadingManager = new THREE.LoadingManager();
+
+var display = document.querySelector('.controls-container').style.display;
+const controlsContainer = document.querySelector('.controls-container');
+
+loadingManager.onStart = function(url, item, total) {
+    controlsContainer.style.display = "none";
+    console.log("has started to load model...");
+}
+
+const progressBar = document.getElementById('progress-bar');
+
+loadingManager.onProgress = function (url, loaded, total ) {
+    progressBar.value = (loaded / total) * 100;
+    console.log ("loading file: " + url + ".\nLoaded" + loaded + "of" + total + "files.");
+}
+
+const progressBarContainer = document.querySelector('.progress-bar-container');
+
+loadingManager.onLoad = function() {
+    controlsContainer.style.display = display;
+    progressBarContainer.style.display = 'none';
+    setTimeout(() => {
+        controlsContainer.style.display = 'none';
+    }, 6000);  
+    }
 
 //GLTF LOADER
-const modelLoader = new GLTFLoader()
+const modelLoader = new GLTFLoader(loadingManager);
 renderer.outputEncoding = THREE.sRGBEncoding
 
 modelLoader.load(
