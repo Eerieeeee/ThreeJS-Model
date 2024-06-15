@@ -247,6 +247,10 @@ contactButton:hover{
     position: fixed;
     top: 0%;
   }
+
+  .progress-bar {
+    color: rgb(163, 157, 96);
+  }
 }
 
 /* ABOUT PAGE SCRIPTS */
