@@ -37,15 +37,6 @@ main {
   padding: 0;
 }
 
-.popup {
-  width:300px;
-  height:300px;
-  background-color: grey;
-  margin-top: 10%;
-  margin-left: 41%;
-  border-radius: 10px;
-}
-
 /* This allows me to customise each element listed below, e.g h1, h2, etc */
 h1, h2, h3, h4, p, span{
   font-family: "Roboto Condensed", sans-serif;
@@ -170,6 +161,42 @@ contactButton:hover{
 }
 
 @media screen and (max-width: 600px) {
+
+  .popup {
+    width:300px;
+    height:300px;
+    background-color: black;
+    padding-top:7.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 30%;
+    margin-left: 41%;
+    border-radius: 10px;
+    border-color: rgb(238, 217, 30);
+    border-width: 3px;
+    text-align: center;
+  }
+
+  .popup > p {
+    color: rgb(238, 217, 30);
+  }
+
+  .popup > h1 {
+    color: rgb(238, 217, 30);
+  }
+
+  .popup.button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    color: rgb(238, 217, 30);
+    padding-top:0%;
+    margin-top: 0%;
+  }
+
+  .progress-bar-container, .controls-container {
+   display:none;
+  }
 
   .column.side, .column.middle {
     width: 100%;
