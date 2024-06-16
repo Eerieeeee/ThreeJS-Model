@@ -314,8 +314,8 @@ projectButton{
   width: 100%;
 }
 
-/* Tablet Size */
-@media screen and (max-width: 600px) {
+/* Phone+ Size */
+@media screen and (max-width: 900px) {
 
     body {
         height: 160vh;
@@ -335,55 +335,72 @@ projectButton{
     }
 
     .about{
-        margin-top: 1%;
+      margin-top: 1.6%;
+      margin-left: 15%;
+      text-align: center;
+  }
+
+    .bimi {
+      display:none;
     }
 
-    .column {
-        padding-top: 9%;
-      }
-      
-      .column.left {
-        padding-right: 0%;
-        width: 0%;
-        display:initial;
-        align-items: center;
-      }
-      
-      .column.middle {
-        align-items: left;
-        padding-top: 9%;
-        width:0%;
-        padding-bottom: 50px;
-      }
+    .fig.desk{
+      display:none;
+    }
+
+    .fig.cap.desk {
+      display: none;
+    }
+
+    .bimi.mob {
+      display: block;
+      width: 60%;
+      margin-top: 1.6%;
+      margin-left: 20%;
+      text-align: center;
+    }
+
+    .fig.mob{
+      padding-top: 0%;
+      padding-bottom: 3%;
+      width: 80%;
+      text-align: center;
+      margin-left: 10%;
+    }    
+  
+    .fig.cap.mob {
+      width: 80%;
+      text-align: center;
+      margin-left: 0%;
+    }
+
+    .about-container {
+      padding: 3%; 
+     
+    }
       
       .column.right {
         display: none;
       }
 
-
-      .column.left.about {
-        width:29%;
-        text-align: left;
-        padding-top: 0px;
-        padding-bottom: 20px;
-        padding-left: 2%;
-      }
-      
-      .column.middle.about {
-        width:19%;
-        text-align: left;
-        padding-top: 0px;
-        padding-bottom: 20px;
-        padding-left: 2%;
-      }
-      
-      .column.right.about {
-        width:52%;
-        text-align: left;
-        padding-top: 0px;
-        padding-bottom: 20px;
-        padding-left: 2%;
+      .qualification.left {
+        vertical-align: text-top;
+        width: 30%;
         display:inline-block;
+        padding-left: 1%;
+      }
+
+      .qualification.middle {
+        vertical-align: text-top;
+        width: 19%;
+        display:inline-block;
+      }
+
+      .qualification.right {
+        vertical-align: text-top;
+        width: 49%;
+        display:inline-block;
+        padding-bottom: 4%;
       }
 
       li.bullet.list{
@@ -391,7 +408,6 @@ projectButton{
       }
 
     .mobile.right {
-        padding-top: 29rem;
         width: 90%;
         text-align: center;
         padding-left: 10%;
@@ -469,8 +485,45 @@ projectButton{
     }
     
     .about{
+        width: 80%;
         margin-top: 1.6%;
+        margin-left: 40%;
+        text-align: center;
     }
+
+    .bimi {
+      width: 80%;
+      margin-top: 1.6%;
+      margin-left: 30%;
+      text-align: center;
+    }
+
+    .fig.desk{
+      width: 80%;
+      text-align: center;
+      margin-left: 10%;
+    }
+
+    .fig.cap.desk{
+      width: 100%;
+      text-align: center;
+      margin-left: 10%;
+    }
+
+    .bimi.mobile {
+      display: none;
+    }
+
+    .fig.mob {
+      display: none;
+    } 
+
+    
+    .fig.cap.mob{
+      display: none;
+    }
+
+
 
   img{
     width: auto;
@@ -582,59 +635,36 @@ projectButton{
     padding-top: 9%;
     padding-left: 12%;
   }
-
-  .column {
-    padding-top: 9%;
-  }
-  
-  .column.left {
-    padding-left: 100px;
-    padding-right: 0%;
-    display:initial;
-    width: 35%;
-    align-items: center;
-  }
-  
-  .column.middle {
-    padding-top: 9%;
-    width:50%;
-    padding-bottom: 50px;
-  }
   
   .column.right {
-    width: 30%;
+    width: 20%;
+    justify-content: flex-end;
     display: initial;
-    padding-left: 3%;
+    float: right;
+    margin-right: 18%;
+    margin-top: 2%;
+    padding-bottom: 3%;
   }
 
-  .column.left.about {
-    /* width:100%; */
-    text-align: left;
-    padding-top: 45px;
-    padding-bottom: 50px;
-    padding-left: 2%;
-    width: 20%;  
-    margin-left: 10%;
+  .qualification.left {
+    vertical-align: text-top;
+    width: 33%;
+    display:inline-block;
+    padding-left: 15%;
   }
-  
-  .column.middle.about {
-    /* width:100%; */
-    text-align: left;
-    padding-top: 45px;
-    padding-bottom: 50px;
-    padding-left: 2%;
-    width: 20%; 
-    margin-left: 10%; 
+
+  .qualification.middle {
+    vertical-align: text-top;
+    width: 33%;
+    display:inline-block;
+    padding-left: 10%;
   }
-  
-  .column.right.about {
-    width:100%;
-    text-align: left;
-    padding-top: 45px;
-    padding-bottom: 50px;
-    padding-left: 2%;
-    padding-right: 0%; 
-    margin-right: 0px;
+
+  .qualification.right {
+    vertical-align: text-top;
+    width: 33%;
+    display:inline-block;
+    padding-bottom: 4%;
   }
 
   li.bullet.list{
