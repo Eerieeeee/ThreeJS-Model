@@ -46,8 +46,12 @@ const loadingManager = new THREE.LoadingManager();
 var display = document.querySelector('.controls-container').style.display;
 const controlsContainer = document.querySelector('.controls-container');
 
+var display = document.querySelector('.controls-mobile').style.display;
+const controlsMobile = document.querySelector('.controls-mobile');
+
 loadingManager.onStart = function(url, item, total) {
     controlsContainer.style.display = "none";
+    controlsMobile.style.display = "none";
     console.log("has started to load model...");
 }
 
@@ -62,9 +66,11 @@ const progressBarContainer = document.querySelector('.progress-bar-container');
 
 loadingManager.onLoad = function() {
     controlsContainer.style.display = display;
+    controlsMobile.style.display = display;
     progressBarContainer.style.display = 'none';
     setTimeout(() => {
         controlsContainer.style.display = 'none';
+        controlsMobile.style.display = 'none';
     }, 6000);  
     }
 
