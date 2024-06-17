@@ -447,7 +447,7 @@ projectButton{
 }
 
 /* Phone Size */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   
   body {
     height: 160vh;
@@ -512,26 +512,26 @@ projectButton{
   }
  
   .floating.buttons {
+    display:none;
     position: fixed;
     padding-top: 9%;
     padding-left: 0%;
   }  
 
   .column {
-    padding-top: 17%;
+    padding-top: 0%;
     float: left;
   }
   
   .column.middle {
-    width:50%;
     text-align: left;
-    padding-top: 1%;
+    padding-top: 0%;
     padding-bottom: 50px;
     padding-left: 2%;
   }
 
   .column.right{
-    display: initial;
+    display: none;
   }
 
   .column.side, .column.middle {
@@ -568,7 +568,7 @@ projectButton{
     margin-bottom: 10px;
     display: block;
     padding: 9px 1px;
-    width: 125px;
+    width: 90px;
     background-color: transparent;
     border-style: solid;
     border-width: 1px;
@@ -604,6 +604,16 @@ projectButton{
   
   .gallery img{
     width: 100%;
+  }
+
+  #backgroundVideo {
+    position: fixed;
+    width: auto;
+    height: auto;
+    max-width: 1000px;
+    max-height: 1000px;
+    padding-top: 50%;
+    z-index: -1;
   }
 
 
