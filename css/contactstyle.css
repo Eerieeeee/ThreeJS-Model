@@ -176,7 +176,20 @@ li.bullet.list{
   }
 
   /* Phone Size */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+
+    p {
+      text-align: left;
+      font-size: 18px;
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 3%;
+    }
+
+    projectButton {
+      margin-left: 35.5%;
+      margin-top: 10%;
+    }
 
     body {
         height: 160vh;
@@ -187,6 +200,7 @@ li.bullet.list{
         flex-grow: 1;
         position: relative;
         overflow:hidden;
+        margin-top: 10%;
     }
 
     h3 {
@@ -197,7 +211,9 @@ li.bullet.list{
 @media screen and (min-width: 1000px) {
 
     p{
-    font-size: 24px;  
+    font-size: 24px;
+    text-align: left;
+    margin-left: 28%;
   }
   
   h3 {
@@ -210,9 +226,12 @@ li.bullet.list{
     align-items: center;
     text-align: center;
     padding:10px 10%;
-  
   }
 
+  projectButton {
+    margin-top: 3%;
+    margin-left: 25%;
+  }
 }
 
 
