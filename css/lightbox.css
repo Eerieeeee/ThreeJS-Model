@@ -202,3 +202,16 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+@media screen and (max-width: 900px) {
+  .lightbox {
+    position: absolute;
+    margin-left: 22%;
+    width: auto;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+    outline: none;
+  }
+}

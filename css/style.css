@@ -459,13 +459,14 @@ projectButton{
   }
 
   .popup{
-    background-color: var(--nav-color);
-    max-width:45%; height:auto;
-    padding: 10px 30px;
+    background-color: rgb(16, 16, 16);
+    max-width:400px; height:auto;
+    margin-left: 20%;
     position: absolute;
-    transform: translate(-49%, 15%);
-    top: 0px;
+    transform: translate(-49%, 1465%);
     border-radius: 12px;
+    border-color: rgb(238, 217, 30);
+    color: rgb(238, 217, 30);
     display: none;
     z-index: 1;
     }
