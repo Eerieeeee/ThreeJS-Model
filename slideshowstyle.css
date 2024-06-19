@@ -493,7 +493,16 @@ main > article > .article-image-section {
     main > article > .article-nav-section > .article-nav-button {
         font-size: 2rem;
         flex-grow: 1;
-    }    
+    }   
+    
+    
+    main > article > .article-nav-section > .article-nav-button > h2:hover {
+        color: var(--highlight-color);
+    }
+
+    main > article > .article-title-section > a:hover {
+        color: var(--highlight-color);
+    }
 
 h1, h2, h3, a, p, span {
     font-family: "Roboto Condensed", sans-serif;
