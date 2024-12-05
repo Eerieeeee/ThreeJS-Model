@@ -260,7 +260,7 @@ main > article:first-child > .article-image-section {
 }
 
 main > article:nth-child(2) > .article-image-section {
-    background-image: url("Images/ZombieGame/ZombieABP.jpg");
+    background-image: url("Images/ZombieGame/ZombieGame.jpg");
 }
 
 main > article:nth-child(3) > .article-image-section {
